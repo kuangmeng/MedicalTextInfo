@@ -22,6 +22,8 @@
 				};
 		});
 	});
+	
+	
     var linkEle = document.getElementById("myid");
     var tmplink = linkEle.href;
     var tmptitle = document.title;

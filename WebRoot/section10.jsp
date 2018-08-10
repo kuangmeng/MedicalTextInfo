@@ -12,7 +12,7 @@
 <meta name="renderer" content="webkit">
 <meta name="fragment" content="!">
 <title>双语翻译</title>
-<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/bootstrap.css">
 <link rel="stylesheet" href="../static/section10/index.css">
 <link rel="icon" id="myid" href="../static/img/avatar.png">
 <link rel="apple-touch-icon" id="myid" href="../static/img/avatar.png">
@@ -21,10 +21,16 @@
 <body>
 	<div id="root">
 		<div data-reactroot="" class="首页">
-			<div class="container" style="text-align: center;">
-				<img class="logo_img" src="../static/section10/dict.png"
-			width="100" height="100"
-			style="margin-top:100px; margin-bottom: 20px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 search-title">
+						<div class="text-center">
+							<h1>
+								<span>双语</span><span>词典</span>
+							</h1>
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="search-type-description">
 						<div class="text-center">
@@ -44,7 +50,7 @@
 								class="btn submit-btn" type="submit"
 								href="">翻译</a></span>
 						</form>
-						<div class="hot-keywords" style="text-align:left;">
+						<div class="hot-keywords">
 							<label>最常搜索：</label><a
 								href="">Hello</a><a
 								href="">VR</a><a

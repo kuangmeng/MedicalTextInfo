@@ -50,6 +50,7 @@
 		<jsp:include page="index/section8.jsp"></jsp:include>
 		<jsp:include page="index/section9.jsp"></jsp:include>
 		<jsp:include page="index/section10.jsp"></jsp:include>
+		
 		<a href="http://mitlab.hit.edu.cn" class="subNavBtn extLink end"
 			style="display:none;">MITLab</a>
 	</div>
