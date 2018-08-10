@@ -29,7 +29,7 @@ function showAns(question, result) {
 	// }
 	var table = '<p style="font-size:14px; font-weight:bold;color:black"> 以下疾病很可能包含上述病症：</p>'
 	table += '<table class="hovertable"><tr><th style="font-size:14px;width:10%;color:black">疾病名</th><th style="font-size:14px;color:black">概述</th><th style="color:black;font-size:14px;width:8%">科室</th></tr>';
-	for (var i = 0; i < result.diseases.length; i++) {
+	for (var i = 0; i < result.diseases.length; i++) { 
 		table += '<tr onmouseover="this.style.backgroundColor=\'#ffff66\';" onmouseout="this.style.backgroundColor=\'#d4e3e5\';">';
 		table += '<td style="font-size:14px; font-weight:bold;">' + result.diseases[i].disease_CNname + '</td>';
 		table += '<td>' + result.diseases[i].summary + '</td>';
@@ -60,11 +60,11 @@ function showAns2(question, result) {
 	content += '<div id="recommend_question" style="text-align:center;"><p>'
 	var max_line_size = 4
 	for (var i = 0; i < result.recommend_question.length && i < max_len; i++) {
-		content += '<a class="btn2 btn-primary" role="button" onclick="fillSearchText(1, sears2, this.text); search2OnClick(sears2.value)">'
-		content += result.recommend_question[i] + '</a>'
-		if (i % max_line_size == max_line_size - 1) {
-			content += '<p>'
-		}
+		content += '<a class="label label-primary" onclick="search2OnClick(\''+ result.recommend_question[i]+'\');document.getElementById(\'kw\').value=\''+ result.recommend_question[i] +'\'">'
+		content += result.recommend_question[i] + '</a>&nbsp;'
+//		if (i % max_line_size == max_line_size - 1) {
+//			content += '<p>'
+//		}
 	}
 	content += '</div>'
 	content += '<div style="font-size:16px;color:black;">' + ans + '</div>';
