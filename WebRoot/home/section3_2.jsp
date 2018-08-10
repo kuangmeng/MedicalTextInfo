@@ -21,7 +21,7 @@
 					<div class="sbibod " id="sfdiv">
 						<div class="sbib_b" id="sb_ifc0" dir="ltr">
 							<div id="gs_lc0" style="position: relative;">
-								<input class="gsfi" id="search" maxlength="2048" name="search"
+								<input class="gsfi" id="search" maxlength="2048"
 									autocomplete="off" type="text"
 									style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; background: url(&quot;data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D&quot;) transparent; position: absolute; z-index: 6; left: 0px; outline: none;">
 							</div>
@@ -30,10 +30,10 @@
 
 					<div class="jsb" style="padding-top:18px">
 						<center>
-							<input name="btn_search_left"
-								onclick="jumpOnClick(search.value, 1)" value=" 症状科室 "
+							<input 
+								onclick="jumpOnClick(1)" value=" 症状科室 "
 								type="submit"> <input value=" 健康问题 "
-								onclick="jumpOnClick(search.value, 2)" name="btn_search_right"
+								onclick="jumpOnClick(2)"
 								type="submit">
 						</center>
 					</div>
@@ -42,18 +42,11 @@
 		</div>
 
 		<script type="text/javascript">
-		function jumpOnClick(flag, text) {
-			if(text != null || text.value != ""){
-				<%session.putValue("text", request.getParameter("search"));%>
-				if(flag == 1){
-					<%session.putValue("flag", 1);%>
-				}else{
-					<%session.putValue("flag", 2);%>
-				}
-				window.location.href = "section3_3.jsp";
-				window.event.returnValue=false;
+			function jumpOnClick(flag) {
+					url = "section3_3.jsp?text=" + encodeURIComponent(document.getElementById('search').value) + "&flag=" + flag;
+					location.href = url;
+					window.event.returnValue=false;
 			}
-		}
-	</script>
+		</script>
 </body>
 </html>

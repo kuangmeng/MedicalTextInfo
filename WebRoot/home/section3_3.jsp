@@ -16,8 +16,38 @@
 </head>
 <body class="has-background s-manhattan-index is-lite"
 	data-gr-c-s-loaded="true" link="#0000cc"
-	style="background-color:#ededed;">
+	style="background-color:#ededed;" onload="GetUrlParam()">
 
+<script type="text/javascript">
+
+//paraName 等找参数的名称
+　　function GetUrlParam() {
+　　　　var url = document.location.toString();
+　　　　var arrObj = url.split("?");
+			var text,flag;
+　　　　if (arrObj.length > 1) {
+　　　　　　var arrPara = arrObj[1].split("&");
+　　　　　　var arr;
+　　　　　　for (var i = 0; i < arrPara.length; i++) {
+　　　　　　　　arr = arrPara[i].split("=");
+　　　　　　　　if (arr != null && arr[0] == "text") {
+　　　　　　　　　　text = decodeURIComponent(arr[1]);
+				   flag = 0;
+				    var psel = document.getElementById("kw");
+                    psel.value = text; //设置
+　　　　　　　　}else if(arr != null && arr[0] == "flag"){
+				  flag = arr[1];
+				  }
+　　　　　　}
+		if(flag == 1){
+			searchOnClick(text);
+		}else if(flag == 2){
+			search2OnClick(text);
+		}
+　　　　}
+　　}
+
+</script>
 	<div id="wrapper" class="wrapper_l" style="background-color:#ededed;">
 		<div id="head" class="s-skin-hasbg white-logo s-opacity-25"
 			style="background-color:#ededed;">
@@ -36,7 +66,7 @@
 						<form id="form" role="form" class="fm" style="margin-top:20px;">
 							<span id="s_kw_wrap" class="bg s_ipt_wr quickdelete-wrap"
 								style="background-color: #fff"> <input type="text"
-								class="s_ipt" name="search" id="kw" maxlength="100"
+								class="s_ipt" name="search" id="kw" maxlength="100" value=""
 								autocomplete="off">
 							</span> <span class="btn_wr s_btn_wr bg" id="s_btn_wr2"> <input
 								type="submit" name="btn_search_left"
@@ -64,35 +94,35 @@
 						style="margin:0 auto; width:120%; text-align:left;"></div>
 					<br>
 					<script type="text/javascript">
-		function searchOnClick(text) {
-			window.event.returnValue=false;
-			document.getElementById('answer').innerHTML = "加载中...";
-			var url = 'http://60.247.77.152:19003/api/getDepartment?q=' + text;
-			httpRequest(url, text, showAns)
-		}
-		function search2OnClick(text) {
-			window.event.returnValue=false;
-			document.getElementById('answer').innerHTML = "加载中...";
-			var url = 'http://60.247.77.152:19003/api/getAnswer?q=' + text;
-			httpRequest(url, text, showAns2)
-		}
-	
-		function SubmitKeyClick(obj, evt) {
-			evt = (evt) ? evt : ((window.event) ? window.event : "")
-			keyCode = evt.keyCode ? evt.keyCode : (evt.which ? evt.which : evt.charCode);
-			if (keyCode == 13) {
-				document.getElementById("psearch").focus();
-			}
-		}
-	
-		function SubmitKeyClick2(obj, evt) {
-			evt = (evt) ? evt : ((window.event) ? window.event : "")
-			keyCode = evt.keyCode ? evt.keyCode : (evt.which ? evt.which : evt.charCode);
-			if (keyCode == 13) {
-				document.getElementById("psearch2").focus();
-			}
-		}
-	</script>
+						function searchOnClick(text) {
+							window.event.returnValue = false;
+							document.getElementById('answer').innerHTML = "加载中...";
+							var url = 'http://60.247.77.152:19003/api/getDepartment?q=' + text;
+							httpRequest(url, text, showAns)
+						}
+						function search2OnClick(text) {
+							window.event.returnValue = false;
+							document.getElementById('answer').innerHTML = "加载中...";
+							var url = 'http://60.247.77.152:19003/api/getAnswer?q=' + text;
+							httpRequest(url, text, showAns2)
+						}
+					
+						function SubmitKeyClick(obj, evt) {
+							evt = (evt) ? evt : ((window.event) ? window.event : "")
+							keyCode = evt.keyCode ? evt.keyCode : (evt.which ? evt.which : evt.charCode);
+							if (keyCode == 13) {
+								document.getElementById("psearch").focus();
+							}
+						}
+					
+						function SubmitKeyClick2(obj, evt) {
+							evt = (evt) ? evt : ((window.event) ? window.event : "")
+							keyCode = evt.keyCode ? evt.keyCode : (evt.which ? evt.which : evt.charCode);
+							if (keyCode == 13) {
+								document.getElementById("psearch2").focus();
+							}
+						}
+					</script>
 				</div>
 			</div>
 		</div>
