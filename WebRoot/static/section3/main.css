@@ -1,0 +1,155 @@
+.btn-primary {
+	color: #fff;
+	background-color: #4D73A0;
+	border-color: #4D73A0;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+	.btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	color: #fff;
+	background-color: #3B5779;
+	border-color: #3B5779
+}
+
+#qiqi_cpv_adsiframe {
+	width: 100%;
+}
+
+.btn2 {
+	display: inline-block;
+	padding: 2px 6px;
+	margin-bottom: 0;
+	margin: 0px 6px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.fancybox-margin {
+	margin-right: 0px;
+}
+
+.header {
+	font-size: 28px;
+	margin-bottom: 80px;
+	color: #fff;
+	background-color: #4D73A0;
+	text-align: center;
+}
+
+.answerLabel {
+	font-size: 18px;
+	word-wrap: break-word;
+	color: #fff;
+	background-color: #4D73A0;
+	padding-right: 50px;
+	padding-left: 50px;
+	text-align: left;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 50% !important;
+	margin-right: auto;
+	margin: 10px auto;
+	float: left
+}
+
+.aw-container-wrap {
+	margin-top: -80px;
+}
+
+.container .logo {
+	text-align: center;
+	margin: 10px auto;
+}
+
+.ss button {
+	padding: 5px 6px 5px 10px;
+	margin-left: 10px;
+}
+
+.container .logo .input-group {
+	margin: 10px 10%;
+}
+
+.container .logo .input-group-btn {
+	width: 1%;
+}
+
+.aw-footer {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+h4 {
+	color: #999999;
+}
+
+#sears {
+	height: 30% !important;
+	width: 80%;
+}
+
+#sears2 {
+	height: 30% !important;
+	width: 80%;
+}
+
+.pixiv {
+	position: fixed;
+	bottom: 40px;
+	width: 100%;
+	z-index: 50;
+	text-align: center;
+	display: block;
+}
+
+.pixiv a {
+	color: #ffffff;
+	width: 100%;
+	display: block;
+}
+
+table.hovertable {
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+
+table.hovertable th {
+	background-color: #c3dde0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
+table.hovertable tr {
+	background-color: #d4e3e5;
+}
+
+table.hovertable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}

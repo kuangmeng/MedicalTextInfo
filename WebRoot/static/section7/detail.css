@@ -1,0 +1,475 @@
+@CHARSET "UTF-8";
+
+a, body {
+	color: #333
+}
+
+body, h2, li, p, ul {
+	margin: 0;
+	padding: 0
+}
+
+body, h2, iframe, li, p, ul {
+	padding: 0
+}
+
+body {
+	font-family: tahoma, arial, 'Hiragino Sans GB', "Microsoft YaHei",
+		'\5FAE\8F6F\96C5\9ED1', sans-serif;
+	background: #f7f8f9;
+	font-size: 14px;
+	word-break: break-all
+}
+
+
+li, p, ul {
+	list-style-type: none
+}
+
+a:hover {
+	color: #00B4A4
+}
+
+#wrap {
+	min-height: 500px;
+	padding-top: 80px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	zoom: 1;
+	display: block
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.P_doctorHome {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	font-size: 16px;
+	position: relative;
+	word-break: break-word;
+	word-wrap: break-word
+}
+
+.P_doctorHome .G_txt1 {
+	color: #333
+}
+
+.P_doctorHome .G_txt2 {
+	color: #999
+}
+
+.P_doctorHome .G_txt3 {
+	color: #666
+}
+
+.P_doctorHome .G_txt4 {
+	color: #35c6c7
+}
+
+.P_doctorHome .F_feed {
+	width: 800px;
+	margin: 0 400px 0 0
+}
+
+.P_doctorHome .F_feed .doctorBox {
+	font-size: 14px;
+	background-color: #fff;
+	padding: 20px
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo {
+	margin-bottom: 10px
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userHd {
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	float: left
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userHd img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt {
+	margin: 0 0 0 120px
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem {
+	padding: 2px 0;
+	text-align: left
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .userNm
+	{
+	margin-right: 10px;
+	font-size: 18px;
+	font-weight: 700
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .userTitle
+	{
+	font-size: 16px;
+	font-weight: 700
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .onLineStat
+	{
+	float: right;
+	font-weight: 700;
+	font-size: 16px;
+	position: relative
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .onLineStat i
+	{
+	position: absolute;
+	left: -40px;
+	top: -10px;
+	font-size: 36px;
+	font-weight: 900
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .onLineStat .online
+	{
+	color: #6cef3d
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .onLineStat .gray
+	{
+	color: #666;
+	margin-left: 5px
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .onLineStat .offline
+	{
+	color: #ddd
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .split {
+	margin: 0 10px;
+	color: #ddd;
+	font-size: 12px
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .skillTitle
+	{
+	line-height: 24px;
+	float: left;
+	width: 50px
+}
+
+.P_doctorHome .F_feed .doctorBox .doctorInfo .userCnt .userItem .skill {
+	margin-left: 50px;
+	line-height: 24px;
+	min-height: 48px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .title {
+	font-weight: 700;
+	font-size: 16px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox {
+	width: 760px;
+	height: 292px;
+	background-color: #f7f8f9;
+	margin-top: 17px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul {
+	padding: 0;
+	margin: 0 0 0 10px;
+	list-style: none
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	text-align: center
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .cell
+	{
+	margin: 4px 4px 0 0;
+	width: 82px;
+	height: 70px;
+	background: #fff;
+	line-height: 70px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .cell a
+	{
+	background: #35c6c7;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	text-decoration: none
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .cell a:hover
+	{
+	background: #13a7a8
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .timeout
+	{
+	background: #d9d9d9
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .title
+	{
+	height: 50px;
+	margin-top: 10px;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: 400
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .title .date
+	{
+	padding-top: 5px;
+	font-size: 16px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .title .day
+	{
+	font-size: 12px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .title p
+	{
+	padding: 0;
+	margin: 0;
+	line-height: 20px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul li .full
+	{
+	background: #ddd
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul .pageBtn
+	{
+	width: 24px;
+	height: 272px;
+	background: #fff;
+	margin: 10px 4px 0 0;
+	color: #999;
+	cursor: pointer
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul .pageBtn:hover
+	{
+	background: #f4f4f4
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul .arrow
+	{
+	position: relative;
+	top: 128px
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul .disable
+	{
+	color: #eee;
+	cursor: default
+}
+
+.P_doctorHome .F_feed .doctorBox .timePanel .timeBox .innerBox ul .disable:hover
+	{
+	background: #fff
+}
+
+.P_doctorHome .F_feed .doctorBox .amountBox {
+	margin: 27px 0 7px;
+	font-size: 16px;
+	text-align: right
+}
+
+.P_doctorHome .F_feed .doctorBox .amountBox .amount {
+	font-weight: 700
+}
+
+.P_doctorHome .P_doctorHome_right {
+	float: right
+}
+
+.P_doctorHome .F_widget {
+	width: 380px;
+	right: 0;
+	top: 0;
+	background: #fff;
+	padding-top: 13px
+}
+
+.P_doctorHome .F_widget .title {
+	margin: 0 20px;
+	font-size: 16px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+	font-weight: 700
+}
+
+.P_doctorHome .F_widget .content {
+	margin: 20px 20px 20px 10px;
+	font-size: 12px;
+	color: #9e9e9e
+}
+
+.P_doctorHome .F_widget .content ol {
+	padding-left: 30px
+}
+
+.P_doctorHome .F_widget .content ol li {
+	line-height: 22px;
+	list-style: inherit
+}
+
+.P_doctorHome .F_widget .notice {
+	padding-bottom: 20px
+}
+
+.P_doctorHome .F_widget .recommend-more {
+	display: none;
+	float: right;
+	font-size: 16px;
+	color: #999;
+	letter-spacing: -.95px;
+	line-height: 16px
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit .doctorhome-recommend-unit-avatar,
+	.router .sep {
+	display: inline-block
+}
+
+.P_doctorHome .F_widget .recommend-more:hover {
+	color: #00B4A4
+}
+
+.P_doctorHome .F_widget .recommend {
+	margin: 0
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit {
+	padding: 13px 0 0 20px
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit .doctorhome-recommend-unit-avatar img
+	{
+	width: 54px;
+	height: 54px;
+	border-radius: 50%
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit .doctorhome-recommend-unit-detail
+	{
+	display: inline-block;
+	height: 54px;
+	vertical-align: top;
+	padding-bottom: 12px;
+	width: 282px;
+	box-shadow: inset 0 -1px 0 0 #eee
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit .doctorhome-recommend-unit-detail p
+	{
+	margin-bottom: 10px;
+	width: 280px
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit .doctorhome-recommend-unit-detail .doctorhome-recommend-unit-name
+	{
+	font-family: tahoma, arial, 'Hiragino Sans GB', "Microsoft YaHei",
+		'\5FAE\8F6F\96C5\9ED1', sans-serif;
+	font-size: 18px;
+	color: #333;
+	line-height: 18px;
+	margin-right: 6px
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit .doctorhome-recommend-unit-detail .doctorhome-recommend-unit-title
+	{
+	font-family: tahoma, arial, 'Hiragino Sans GB', "Microsoft YaHei",
+		'\5FAE\8F6F\96C5\9ED1', sans-serif;
+	font-size: 12px;
+	color: #999;
+	line-height: 12px
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit:hover {
+	background: #F3FCFB
+}
+
+.P_doctorHome .F_widget .recommend .doctorhome-recommend-unit:last-child .doctorhome-recommend-unit-detail
+	{
+	box-shadow: none
+}
+
+.P_doctorHome .F_comment {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #fff
+}
+
+.P_doctorHome .F_comment .titleBar {
+	text-align: left;
+	border-bottom: 2px solid #eee;
+	padding-bottom: 15px
+}
+
+.P_doctorHome .F_comment .titleBar .count {
+	font-size: 14px
+}
+
+.P_doctorHome .F_comment .commentList {
+	margin: 10px 0
+}
+
+.P_doctorHome .F_comment .commentList ul {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+.P_doctorHome .F_comment .commentList ul li {
+	padding: 0 0 15px;
+	margin: 15px 0 0;
+	list-style: none;
+	border-bottom: 1px solid #eee
+}
+
+.P_doctorHome .F_comment .commentList ul li .cmmtInfo .name {
+	font-size: 12px
+}
+
+.P_doctorHome .F_comment .commentList ul li p {
+	line-height: 24px;
+	margin: 15px 0;
+	padding: 0;
+	font-size: 14px
+}
+
+.P_doctorHome .F_comment .commentList ul li .time {
+	font-size: 12px
+}
+
+.P_doctorHome .F_comment .commentList .startBox {
+	position: relative;
+	top: 4px
+}

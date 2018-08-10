@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+
+
+ h2, li, p, ul {
+	margin: 0;
+	padding: 0
+}
+
+h2, iframe, li, p, ul {
+	padding: 0
+}
+
+.error-hint, .tab-con {
+	text-align: center
+}
+
+.container, .drop {
+	box-sizing: border-box
+}
+
+.paginations .item{
+	text-decoration: none
+}
+
+.iconfont, .paginations .skip-wrap em, i {
+	font-style: normal
+}
+
+
+li, p, ul {
+	list-style-type: none
+}
+
+
+#wrap {
+	min-height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+#wrap h2 {
+	font-weight: 400
+}
+
+
+
+.J_index_guide {
+	width: 824px;
+	height: 288px;
+	padding: 0 12px 20px;
+	overflow: hidden
+}
+
+.J_index_guide h2 {
+	border-bottom: 1px solid #eee;
+	padding: 11px 8px;
+	font-size: 16px;
+	color: #666
+}
+
+.J_index_guide .index-guide-departlist {
+	overflow: hidden;
+	padding-top: 14px
+}
+
+.J_index_guide_department {
+	padding: 9px 0 9px 5px;
+	width: 266px;
+	box-sizing: border-box;
+	float: left
+}
+
+.J_index_guide_department .guide-department-label {
+	float: left;
+	height: 50px;
+	margin-right: 10px;
+	position: relative;
+	top: 5px;
+	left: 0;
+	color: #ccc;
+	font-size: 22px
+}
+
+.J_index_guide_departmentName {
+	margin: 0
+}
+
+.J_index_guide_departmentName a:active, .J_index_guide_departmentName a:link,
+	.J_index_guide_departmentName a:visited {
+	font-size: 16px;
+	font-weight: 500;
+	color: #00b4a4
+}
+
+.J_index_guide_departmentName a:hover {
+	text-decoration: underline
+}
+
+.J_index_guide_symptomsName {
+	padding-right: 5px
+}
+
+.J_index_guide_symptomsName:active, .J_index_guide_symptomsName:link,
+	.J_index_guide_symptomsName:visited {
+	font-size: 14px;
+	color: #666
+}
+
+.J_index_guide_symptomsName:hover {
+	color: #00b4a4
+}
