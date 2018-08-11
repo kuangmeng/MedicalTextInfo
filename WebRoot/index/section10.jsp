@@ -11,7 +11,7 @@
 		</div>
 		<div class="text">
 			<h1>简介</h1>
-			<p>这是一段关于双语词典功能的简介！</p>
+			<p>这是一段关于病例翻译功能的简介！</p>
 		</div>
 		<div class="buttons box">
 			<button

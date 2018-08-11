@@ -3,6 +3,6 @@
 
 <div class="section s3">
 	<div class="inner ">
-		<h1>Section 10</h1>
+		<h1>Section</h1>
 	</div>
 </div>

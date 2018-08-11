@@ -118,8 +118,8 @@ input, img {
 
 		<div class="subMenu">
 			<div class="inner">
-				<a href="#s1" class="subNavBtn"> <span>主题浏览</span>
-				</a> <a href="#s2" class="subNavBtn"> <span>最新专题</span>
+				<a href="#s1" class="subNavBtn"> <span>最新专题</span>
+				</a> <a href="#s2" class="subNavBtn"> <span>专题浏览</span>
 				</a> <a href="#s3" class="subNavBtn"> <span>科室浏览</span>
 				</a> <a href="#s4" class="subNavBtn"> <span>上传指南</span>
 				</a>
